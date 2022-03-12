@@ -1,0 +1,25 @@
+<!-- no docotype. fuck you! -->
+<head>
+    <title>Boring News</title>
+    <link href="purged_bootstrap.css" rel="stylesheet">
+    <link href="fontstuff.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<div class="container-lg">
+    <br />
+    <h1><p class="text-dark fw-bold" style="font-family: 'sansforgetica-regular', Helvetica, Arial, sans-serif;">Boring News </p></h1>
+    <div class="px-0 px-lg-3 container-lg" style="font-family: 'Lexend', sans-serif;">
+        <hr style="height:3px">
+        {% for i in articles %}
+            <p class="fs-3">{{ i }}</p>
+            <hr style="height:3px">
+        {% endfor %}
+    </div>
+    <br />
+    <p style="font-family: 'Lexend', sans-serif;"><small>Made by Wissotsky in 2021</small></p>
+
+</div>
